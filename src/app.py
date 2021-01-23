@@ -30,7 +30,7 @@ def alive():
     return "Yes"
 
 @app.route('/helloworld')
-def alive():
+def helloworld():
     return "Hello DevOps World"
 
 @app.route('/hello/<name>')
