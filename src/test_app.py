@@ -16,6 +16,10 @@ class BasicTests(unittest.TestCase):
     def test_alive(self):
         response = self.app.get(HOME_URL+"alive")
         self.assertEqual(response.status_code, 200)
+        
+    def test_helloworld(self):
+        response = self.app.get(HOME_URL+"helloworld")
+        self.assertEqual(response.status_code, 200)
 
     def test_hello(self):
         response = self.app.get(HOME_URL+"hello/alice")
