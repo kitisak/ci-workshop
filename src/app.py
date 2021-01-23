@@ -29,6 +29,10 @@ def index():
 def alive():
     return "Yes"
 
+@app.route('/helloworld')
+def alive():
+    return "Hello DevOps World"
+
 @app.route('/hello/<name>')
 def hello(name=None):
     return render_template('hello.html',
